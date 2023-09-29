@@ -1,0 +1,153 @@
+/* Reset some default browser styles */
+body, h1, h2, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a container to hold the form and results sections */
+.container {
+    /* background-color: #BFBEBB; */
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1{
+    color: #007BFF;
+}
+h2{
+    /* underline */
+    text-decoration: underline;
+}
+/* little design for p */
+p{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+/* Style the form section */
+.form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 33%;
+    display: inline-block; /* Added to contain the form section */
+}
+
+.form form {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-bottom: 5px;
+}
+
+.form select, .form input[type="number"], .form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.government-header img {
+    max-width: 20%;
+    border-radius: 50%; /* Make the logo image round */
+    margin-bottom: 10px;
+}
+
+.results {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; 
+    /* align-items: center; */ /* Center the content vertically */
+    margin-top: 1px;
+    flex: 2; /* Expanded to occupy 2/3 of the container */
+}
+
+.result {
+    width: 48%; /* Set the width to create two side-by-side columns */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 1px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+.government-header {
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    padding: 10px;
+    text-align: center;
+    background-color: #007BFF; /* Header background color */
+    color: white; /* Header text color */
+}
+
+
+
+
+/* Style the Calculate button */
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* make the table center */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    /* design the table  */
+    border-collapse: collapse;
+    width: 100%;
+    /* color: #588c7e; */
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+}
+/* make th as different table */
+th {
+    background-color: #588c7e;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    color: #007BFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}

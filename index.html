@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Politicy India</title>
+</head>
+<body>
+    <center><h1 class="title" onclick="showDetails()" >Government Policy Comparer</h1></center>
+    <div class="container">
+        <section class="form">
+            <center>
+                <h1><strong>Enter Your Information</strong></h1>
+            <h3>See the Impacts of each Government's Policies on your Household</h3>
+            <hr>
+            </center>
+            <form id="calculatorForm">
+                <!-- add name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="filingStatus">Filing Status:</label>
+                <select id="filingStatus" name="filingStatus">
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <!-- Add more options -->
+                </select>
+                <label for="income">Income:</label>
+                <input type="number" id="income" name="income">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                <label for="dependents">Number of Dependents:</label>
+                <input type="number" id="dependents" name="dependents">
+                <label for="zipCode">PIN Code:</label>
+                <input type="text" id="zipCode" name="zipCode">
+                <button type="submit">Calculate</button>
+            </form>
+        </section>
+        <section class="results">
+            <div class="result" id="government1">
+                <div class="government-header">
+                    <img src="https://cdn.siasat.com/wp-content/uploads/2023/05/2023_5img13_May_2023_PTI05_13_2023_000440B-scaled.jpg" alt="Government A Logo">
+                    <h2>Congress</h2>
+                    <p>D K Shivakumar</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Change</th>
+                    </tr>
+                    <tr>
+                        <td>Income</td>
+                        <td>+&#8377;5000</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Benefits</td>
+                        <td>-&#8377;8000</td>
+                    </tr>
+                    <tr>
+                        <td>Services</td>
+                        <td>-&#8377;5000</td>
+                    </tr>
+                    <tr>
+                        <td>Gruhalakshmi</td>
+                        <td>+&#8377;2000</td>
+                    </tr>
+                    <tr>
+                        <td>Gruhajyothi</td>
+                        <td>200U</td>
+                    </tr>
+                    <tr>
+                        <td>Yuvanidhi</td>
+                        <td>+&#8377;1500</td>
+                    </tr>
+                    <tr>
+                        <td>AnnaBhagya</td>
+                        <td>+10 KG</td>
+                    </tr>
+                    <tr>
+                        <td>Uchitha Prayana</td>
+                        <td>Women</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="result" id="government2">
+                <div class="government-header">
+                    <img src="https://images.news18.com/ibnlive/uploads/2021/08/basavaraj-s-bommai.jpg" alt="Government B Logo">
+                    <h2>BJP</h2>
+                    <p>Basavaraja Bommai</p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Change</th>
+                    </tr>
+                    <tr>
+                        <td>Income</td>
+                        <td>+&#8377;6000</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Benefits</td>
+                        <td>-&#8377;1500</td>
+                    </tr>
+                    <tr>
+                        <td>Services</td>
+                        <td>+&#8377;8000</td>
+                    </tr>
+                    <tr>
+                        <td>Free Gas</td>
+                        <td>3/Year</td>
+                    </tr>
+                    <tr>
+                        <td>Milk for BPL</td>
+                        <td>+1/2L </td>
+                    </tr>
+                    <tr>
+                        <td>Widow Pension</td>
+                        <td>+&#8377;2000 </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
